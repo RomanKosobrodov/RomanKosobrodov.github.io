@@ -11,7 +11,7 @@ My recent project at the Department of Cardiology of Westmead Public Hospital. U
 
 ### [MUSHRA Test](http://mushra.kosobrodov.net)
 
-Multichannel implementation of MUSHRA listening tests as specified by ITU Recommendation BS.1534-1. I developed this software for ambisonic experiments while working at the University of Sydney. 
+Multichannel implementation of MUSHRA listening tests as specified by [ITU Recommendation BS.1534](https://www.itu.int/rec/R-REC-BS.1534/en). I developed this software for ambisonic experiments while working at the University of Sydney. 
 
 Main features:
 
@@ -25,7 +25,7 @@ Visit [MUSHRA Test](http://mushra.kosobrodov.net) site for more details.
 
 ### [Multichannel Audio for Matlab](http://mcha.kosobrodov.net)
 
-mCha is a cross-platform Matlab toolbox for simultaneous recording, processing and playback of multichannel audio. It is written in C++ using [JUCE](http://juce.com) and [FFTW](http://example.com) library and is optimised for simultaneous recording and playback of a large number of audio channels. It was intended to replace Matlab binding for PortAudio as we did not have success in using this library/toolbox. 
+mCha is a cross-platform Matlab toolbox for simultaneous recording, processing and playback of multichannel audio. It is written in C++ using [JUCE](http://juce.com) and [FFTW](http://www.fftw.org) library and is optimised for simultaneous recording and playback of a large number of audio channels. It was intended to replace Matlab binding for PortAudio since we had problems using it. 
 
 Main features:
 

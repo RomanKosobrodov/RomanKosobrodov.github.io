@@ -122,6 +122,10 @@ Responsibilities:
 <td>Object-oriented and procedural programming, STL, algorithms and templates</td>
 </tr>
 <tr class="row-a">
+<td><strong>Documentation</strong></td>
+<td>Doxygen, Sphinx, markdown, HTML/CSS, Jekyll, Wordpress</td>
+</tr>
+<tr class="row-a">
 <td><strong>Signal processing and Research
 </strong></td>
 <td>

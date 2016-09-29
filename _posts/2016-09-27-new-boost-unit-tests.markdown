@@ -19,7 +19,7 @@ sudo apt-get install libboost-dev
 This will install complete Boost library. You can also install just the Boost Unit Tests Framework:
 
 {% highlight bash %}
-sudo apt-get install libboost-tests?????????
+sudo apt-get install libboost-test-dev
 {% endhighlight %}
 
 ### Step 2 - Create a new project

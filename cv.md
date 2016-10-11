@@ -78,7 +78,6 @@ Level 28, 91 King William St., Adelaide, 5000, SA</td>
 Responsibilities:
 
 * Develop noise propagation models, conduct environmental noise assessments and prepare reports
-* Assess noise levels inside buildings, acoustic separation and reverberation time, and develop acoustic treatments
 * Conduct noise and vibration measurements
 * Provide advice on noise legislation and standards internally and to the clients
 * Manage measurement equipment

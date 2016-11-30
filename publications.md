@@ -5,6 +5,8 @@ permalink: /publications/
 ---
 
 ### List of publications
+1. D.T. Nguyen, M.A. Barry, R. Kosobrodov, A. Thiagalingam, and A. L. McEwan. _Three-Dimensional
+Electrical Impedance Tomography for Pulmonary Embolism. A Simulation Study of a 16-Electrode System_ in Advances in Imaging and Sensing. CRC Press 2016 [[PDF]](http://www.crcnetbase.com/doi/pdfplus/10.1201/9781315371283-13 "EIT for pulmonary embolism")   
 
 1. WWB Chik, R Kosobrodov, A Bhaskaran, MA Barry, DT Nguyen, J Pouliopoulos, K Byth, G Sivagangabalan, SP Thomas, DL Ross, A McEwan, P Kovoor, A Thiagalingam. _Acoustic Signal Emission Monitoring as a Novel Method To Predict Steam Pops during Radiofrequency Ablation: Preliminary Observations_. Journal of cardiovascular electrophysiology. 2014 [[link]](http://onlinelibrary.wiley.com/doi/10.1111/jce.12598/abstract "Acoustic Emission - A Novel Method to Predict Steam Pops during RF Ablation")
 

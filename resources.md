@@ -7,7 +7,9 @@ permalink: /resources/
 Here I keep track of books, talks and internet resources that I find usefull.
 
 ### Talks
-
+1. Trey Hunner. _Readability Counts_.PyCon 2017 [[youtube]](https://www.youtube.com/watch?v=knMg6G9_XCg)
+1. Andrew T. Baker. _5 ways to deploy your Python web app in 2017_. PyCon 2017 [[youtube]] (https://www.youtube.com/watch?v=vGphzPLemZE)
+1. Cory Benfield. _Requests Under The Hood_. PyCon 2017 [[youtube]](https://www.youtube.com/watch?v=ptbCIvve6-k)
 1. Ned Batchelder. _Machete-mode debugging: Hacking your way out of a tight spot_. PyCon 2016 [[youtube]](https://www.youtube.com/watch?v=bAcfPzxB3dk) 
 1. Jack Diederich. _Stop writing classes_. PyCon 2012 [[youtube]](https://www.youtube.com/watch?v=o9pEzgHorH0)
 
@@ -30,3 +32,4 @@ Here I keep track of books, talks and internet resources that I find usefull.
 
 ### Video Courses
 1. Guy Routledge. _Building static websites with Jekyll_. [[Tuts+]](https://webdesign.tutsplus.com/courses/building-static-websites-with-jekyll?ec_promo=teaser_post_short) 
+1. Chris Richardson. _Event-driven Microservices: A Pattern Language for Deployment, Communication, and Refactoring_. [[O'Reilly]]()

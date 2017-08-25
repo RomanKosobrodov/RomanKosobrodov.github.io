@@ -32,4 +32,4 @@ Here I keep track of books, talks and internet resources that I find usefull.
 
 ### Video Courses
 1. Guy Routledge. _Building static websites with Jekyll_. [[Tuts+]](https://webdesign.tutsplus.com/courses/building-static-websites-with-jekyll?ec_promo=teaser_post_short) 
-1. Chris Richardson. _Event-driven Microservices: A Pattern Language for Deployment, Communication, and Refactoring_. [[O'Reilly]]()
+1. Chris Richardson. _Event-driven Microservices: A Pattern Language for Deployment, Communication, and Refactoring_. [[O'Reilly]](https://player.oreilly.com/videos/9781491944165)

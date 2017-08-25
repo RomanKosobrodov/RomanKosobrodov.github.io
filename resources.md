@@ -31,5 +31,10 @@ Here I keep track of books, talks and internet resources that I find usefull.
 1. Roger Labbe. _Kalman and Bayesian Filters in Python_ [[GitHub]](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python "GitHub repository")
 
 ### Video Courses
-1. Guy Routledge. _Building static websites with Jekyll_. [[Tuts+]](https://webdesign.tutsplus.com/courses/building-static-websites-with-jekyll?ec_promo=teaser_post_short) 
+#### Software Architecture
 1. Chris Richardson. _Event-driven Microservices: A Pattern Language for Deployment, Communication, and Refactoring_. [[O'Reilly]](https://player.oreilly.com/videos/9781491944165)
+#### JavaScript
+1. Douglas Crockford. _The Good Parts of JavaScript and the Web_. [[Lynda]](https://www.lynda.com/course-tutorials/Good-Parts-JavaScript-Web/604268-2.html)
+1. Kyle Simpson. _Advanced JavaScript_. [[Pluralsight]](https://www.pluralsight.com/courses/advanced-javascript)
+#### Web
+1. Guy Routledge. _Building static websites with Jekyll_. [[Tuts+]](https://webdesign.tutsplus.com/courses/building-static-websites-with-jekyll?ec_promo=teaser_post_short) 

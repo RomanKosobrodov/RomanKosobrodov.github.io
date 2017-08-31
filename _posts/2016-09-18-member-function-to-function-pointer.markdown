@@ -6,7 +6,7 @@ categories: "C++"
 ---
 
 As a C++ programmer I used to think that there are no tasks that could not be
-tackled by the language. People do all sorts of facsinating things with it including
+tackled by the language. People do all sorts of fascinating things with it including
 rendering web pages and processing text.
 
 Recently I came across a simple task that apparently could not be solved in C++.
@@ -43,7 +43,7 @@ double standalone(int n, double x)
 }
 {% endhighlight %}
 
-This (highly useful) function can now be used with our third-party code like this:
+This function can now be used with our third-party code like this:
 
 {% highlight cpp %}
 std::cout << third_party_function(standalone) << "\n";
@@ -91,5 +91,5 @@ with equally devastating results.
 
 Sad as it is but this conversion seems impossible in C++.
 
-And how did I go about solving my optimisation problem with MKL? The usual C++ way - I wrote more code!
+And how did I go about solving my optimisation problem with MKL? The old-school way - I wrote more code!
 

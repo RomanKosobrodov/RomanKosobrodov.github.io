@@ -1,0 +1,193 @@
+---
+layout: post
+title:  "Multisite Subdomain WordPress in Virtual Box"
+date:   2015-04-06
+categories: "Linux"
+---
+
+In this tutorial we will create a multisite subdomain WordPress intallation in a Virtual Box. 
+With this setup you can develop and debug your multiple WordPress sites locally even without Internet connection.
+
+As you probably know WordPress does not allow you to create a network installation if you are on a localhost or use an IP address to access your site. 
+If you are running Linux on your host and guest machines you can easily overcome this limitation. Keep reading.
+
+## System
+
+I run a LEMP stack (Linux + Nginx + Mysql + PHP) in the Oracle VM virtual box. 
+The guest OS is 64 bit Ubuntu LTS 14.04 minimal. 
+My host is also running 64 bit Ubuntu 14.04 LTS full version. 
+I set up a ‘Host Only’ network in the virtual box so that I can continue working on my sites when I’m not connected to a network.
+
+## Preparation
+
+I assume that you already have a single site-installation of WordPress running in the virtual box.
+
+If you are starting from scratch, there are excellent tutorials on how to set up a [LEMP stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-14-04)
+ and [WordPress](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-nginx-on-ubuntu-14-04) on the Digital Ocean web site.
+
+Instructions on how to use VirtualBox on Ubuntu are available [here](https://help.ubuntu.com/community/VirtualBox).
+
+## Set up Host Only network
+
+In the Oracle VM go to **File** in the main menu, then **Preferences >> Network >> Host-only network**. 
+Create a new adaptor and configure it manually using the parameters shown below.
+
+## Configuration parameters for host only network
+
+Open your Oracle VM and select ‘Host Only’ network interface for the appliance running your WordPress server. 
+Do not forget to disable other network interfaces.
+
+## Configure DHCP service for your new network. 
+You can use a configuration different from the default, of cause. Here we will assume that DNCP is configured to
+assign IP addresses starting from 172.16.0.101.
+Check that the network is working. Type the WordPress server address in your browser, for example `http://172.16.0.101`. 
+You should see your home page.
+
+## Change host name on the WordPress server
+
+We need to trick WordPress into believing we are running a real server by creating an alias to localhost. 
+The host name is stored in `/etc/hosts`.
+
+Switch to your WordPress server terminal or use ssh from your host. 
+Open the file in your favourite editor with superuser privileges, for example:
+
+```bash
+sudo nano /etc/hosts
+```
+
+Change the name of the local host to your development site address. 
+It can be the same as your production site, but it is a good idea to use a different name
+so that you don’t mess it up accidentally. So, change
+
+```bash
+127.0.0.1 localhost
+```
+
+to
+
+```bash
+127.0.0.1 awesome.dev
+```
+
+Change your site address in the WordPress. Log into wp-admin and change
+
+```bash    
+localhost
+```
+
+to
+
+```bash
+awesome.dev
+```
+
+Log out for the changes to take effect.
+
+## Add new domain to /etc/hosts/ on the host machine
+
+Now we need to tell our host how to resolve awesome.dev by adding the virtual box IP to `/etc/hosts`
+
+Switch from the virtual box to the host machine. Open `/etc/hosts` with nano:
+
+```bash
+sudo nano /etc/hosts
+```
+
+and add the following line:
+
+```bash
+172.16.0.101 awesome.net
+```
+
+after the line starting with
+
+```bash    
+127.0.1.1
+```
+
+Check that that you can access the WordPress server from your browser through http://awesome.dev. If something went wrong on that stage, you’ll have to manually reset the site URL (more instructions)
+
+## Update Nginx configuration file
+
+Nginx configuration is normally stored in `/etc/nginx/sites-available/` with a symbolic link placed in `/etc/nginx/sites-enabled`. 
+Suppose the configuration file is called `my-awesome-site`.
+
+Open it:
+
+```bash
+sudo nano /etc/nginx/sites-enabled/my-awesome-site
+```
+
+find the line
+
+```bash
+server_name awesome.dev
+```
+
+and add a wildcard for subdomains:
+
+```bash
+server_name awesome.dev *.awesome.dev;
+```
+
+Save and close.
+Reload Nginx:
+
+```bash
+sudo service nginx reload
+```
+
+Check that subdomain names are being resolved by Nginx. Try accessing a subdomain from your browser, for example:
+
+```bash
+oops.awesome.dev
+```
+
+You should be redirected to the main page of your site.
+
+## Setup WordPress network
+
+Now proceed with a usual WordPress network installation:
+
+Enable Multisite by adding:
+
+```php
+define('WP_ALLOW_MULTISITE', true);
+```
+
+to your `wp-config.php` before the lines:
+
+```php
+/* That's all, stop editing! Happy blogging. */
+```
+
+Log in to wp-admin, go to **Settings >> Setup Network** and enable subdomain network.
+Copy the code generated by WordPress and paste it into the `wp-config.php` after the line you’ve just added.
+Ignore .htaccess rewrite rules (Nginx does not require any of them).
+
+## Create a site in your new network
+
+Log into wp-admin, go to **My Sites >> Network Admin >> Sites** and create a new site. We’ll call it `truly`. 
+You can create a test static page if you wish to.
+
+## Update /etc/hosts on your host machine
+
+Now we need to tell our host machine (the one running the Oracle VM) that we have a new subdomain in our WordPress network.
+
+Switch to the terminal of your host machine. Open `/etc/hosts` once again
+
+```bash
+sudo nano /etc/hosts
+```
+
+and add the following line:
+
+```bash
+172.16.0.101 truly.awesome.dev
+```
+
+Check that it works by accessing `http://truly.awesome.dev` from your browser.
+
+## Add more sites
+
+Repeat the last two steps to add more sites to your network.

@@ -5,9 +5,10 @@ date:   2016-09-26
 categories: "C++"
 ---
 
-You can't fool nature: whatever you gain in performace with C++ you lose in development time and code volume. Not always!   
+In my experience Python beats C++ in terms of development time with a ratio 3 to 1.
+The same is true for the code size. There are a few examples though where the gap is less obvious.   
 
-Here is a four-liner code to check if two strings are anagrams:
+Here is a four-liner to check if two strings are anagrams:
 {% highlight cpp %}
 bool is_anagram(const std::string& s1, const std::string& s2)
 {
@@ -35,11 +36,11 @@ def is_anagram(s1, s2):
 
 OK, clarity is probably not the strongest side of the C++ snippet above. So what is it doing?
 
-The first for_each creates a map of symbols in the string. Spaces are ignored, characters are converted to lower case and the count is incremented. The trick with ++m[a] is that map creates a default key-value pair if you call operator[] for a non-existing key. The rest is pretty usual: we capture the map by reference and let the lambda modify it by declaring it mutable.
-The second call to for_each decrements symbol counts in the map.
+The first for_each creates a map of symbols in the first string. Spaces are ignored, characters are converted to lower case and the count is incremented. The trick with ++m[a] is that map creates a default key-value pair if you call operator[] for a non-existing key. The rest is pretty usual: we capture the map by reference and let the lambda modify it by declaring it mutable.
+The second call to for_each performs a similar operation using symbols of the second string, this time decrementing the symbol counts in the map.
 Finally, if all the counts in the map are zeros we have an anagram!
 
-And this is my favourite:
+And here is my favourite:
 
 {% highlight python %}
 assert is_anagram('public relations', 'crap built on lies')

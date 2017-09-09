@@ -35,6 +35,8 @@ Here I keep track of books, talks and internet resources that I find usefull.
 #### Software Architecture
 
 1. Chris Richardson. _Event-driven Microservices: A Pattern Language for Deployment, Communication, and Refactoring_. [[O'Reilly]](https://player.oreilly.com/videos/9781491944165)
+1. Ryan Plant. _Getting Started with Apache Kafka_. [[Pluralsight]](https://www.pluralsight.com/courses/apache-kafka-getting-started)
+1. Ben Straub. _Building Microservice Systems with Docker and Kubernetes_. [[O'Reilly]](http://shop.oreilly.com/product/0636920048244.do)
 
 #### JavaScript
 

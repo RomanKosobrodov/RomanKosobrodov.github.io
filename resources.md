@@ -4,7 +4,6 @@ title: resources
 permalink: /resources/
 ---
 
-Here I keep track of books, talks and internet resources that I find usefull.
 
 ### Talks
 1. Trey Hunner. _Readability Counts_.PyCon 2017 [[youtube]](https://www.youtube.com/watch?v=knMg6G9_XCg)
@@ -17,7 +16,9 @@ Here I keep track of books, talks and internet resources that I find usefull.
 ### Books
 
 #### Software Methodology
-1. Robert C. Martin. _Clean Code: A Handbook of Agile Software Craftsmanship_ 
+1. Robert C. Martin. _Clean Code: A Handbook of Agile Software Craftsmanship_[[Prentice Hall]](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) 
+1. Sam Newman. _Building Microservices. Designing Fine-Grained Systems_[[O'Reilly Media]](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
+1. Jim Webber, Savas Parastatidis, Ian Robinson. _REST in Practice Hypermedia and Systems Architecture_[[O'Reilly Media]](https://www.amazon.com/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829)
 
 #### C++
 1. Anthony Williams. _C++ Concurrency in Action: Practical Multithreading_
@@ -30,6 +31,11 @@ Here I keep track of books, talks and internet resources that I find usefull.
 #### Signal Processing
 1. Roger Labbe. _Kalman and Bayesian Filters in Python_ [[GitHub]](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python "GitHub repository")
 
+#### Other
+1. Nassim Taleb. _Antifragile: Things That Gain from Disorder_ [[Random House]](https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680)
+1. Atul Gawande. _The Checklist Manifesto: How to Get Things Right_ [[Picador]](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000)
+
+
 ### Video Courses
 
 #### Software Architecture
@@ -37,6 +43,9 @@ Here I keep track of books, talks and internet resources that I find usefull.
 1. Chris Richardson. _Event-driven Microservices: A Pattern Language for Deployment, Communication, and Refactoring_. [[O'Reilly]](https://player.oreilly.com/videos/9781491944165)
 1. Ryan Plant. _Getting Started with Apache Kafka_. [[Pluralsight]](https://www.pluralsight.com/courses/apache-kafka-getting-started)
 1. Ben Straub. _Building Microservice Systems with Docker and Kubernetes_. [[O'Reilly]](http://shop.oreilly.com/product/0636920048244.do)
+
+#### Cloud Technology
+1. Fabien Ruffin. _File Storage Using AWS S3 and Glacier: Developer Deep Dive_. [[Pluralsight]](https://www.pluralsight.com/courses/file-storage-aws-s3-glacier-developer-deep-dive)
 
 #### JavaScript
 

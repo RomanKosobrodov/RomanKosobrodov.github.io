@@ -16,15 +16,16 @@ permalink: /resources/
 ### Books
 
 #### Software Methodology
-1. Robert C. Martin. _Clean Code: A Handbook of Agile Software Craftsmanship_[[Prentice Hall]](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) 
-1. Sam Newman. _Building Microservices. Designing Fine-Grained Systems_[[O'Reilly Media]](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
-1. Jim Webber, Savas Parastatidis, Ian Robinson. _REST in Practice Hypermedia and Systems Architecture_[[O'Reilly Media]](https://www.amazon.com/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829)
+1. Robert C. Martin. _Clean Code: A Handbook of Agile Software Craftsmanship_ [[Prentice Hall]](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) 
+1. Sam Newman. _Building Microservices. Designing Fine-Grained Systems_ [[O'Reilly Media]](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
+1. Jim Webber, Savas Parastatidis, Ian Robinson. _REST in Practice Hypermedia and Systems Architecture_ [[O'Reilly Media]](https://www.amazon.com/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829)
+1. Michael T. Nygard. _Release It! Design and Deploy Production-Ready Software_ [[The Pragmatic Programmers]](https://pragprog.com/book/mnee/release-it)
 
 #### C++
 1. Anthony Williams. _C++ Concurrency in Action: Practical Multithreading_
 1. Scott Meyers. _Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14_
 
-#### Python
+#### Python 
 1. Brett Slatkin. _Effective Python: 59 Specific Ways to Write Better Python (Effective Software Development Series)_
 1. Andrew Collette. _Python and HDF5. Unlocking Scientific Data_
 
@@ -34,7 +35,7 @@ permalink: /resources/
 #### Other
 1. Nassim Taleb. _Antifragile: Things That Gain from Disorder_ [[Random House]](https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680)
 1. Atul Gawande. _The Checklist Manifesto: How to Get Things Right_ [[Picador]](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000)
-
+1. Christopher Alexander. _The Nature of Order. An Essay on lhte Art of Building athe Nature of the Universe. Book One. The Phenomenon of Life_ [[The Center for Enviromental Structure]](https://www.patternlanguage.com/bookstore/bookshelf.html#0)
 
 ### Video Courses
 
@@ -51,6 +52,8 @@ permalink: /resources/
 
 1. Douglas Crockford. _The Good Parts of JavaScript and the Web_. [[Lynda]](https://www.lynda.com/course-tutorials/Good-Parts-JavaScript-Web/604268-2.html)
 1. Kyle Simpson. _Advanced JavaScript_. [[Pluralsight]](https://www.pluralsight.com/courses/advanced-javascript)
+1. Kyle Simpson. _ES6 - The Right Parts_. [[Frontend Masters]](https://frontendmasters.com/courses/es6-right-parts/)
+1. Kyle Simpson. _Rethinking Asynchronous JavaScript_. [[Frontend Masters]](https://frontendmasters.com/courses/rethinking-async-js/)
 
 #### Web
 

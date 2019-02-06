@@ -35,7 +35,7 @@ permalink: /resources/
 #### Other
 1. Nassim Taleb. _Antifragile: Things That Gain from Disorder_ [[Random House]](https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680)
 1. Atul Gawande. _The Checklist Manifesto: How to Get Things Right_ [[Picador]](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000)
-1. Christopher Alexander. _The Nature of Order. An Essay on lhte Art of Building athe Nature of the Universe. Book One. The Phenomenon of Life_ [[The Center for Enviromental Structure]](https://www.patternlanguage.com/bookstore/bookshelf.html#0)
+1. Christopher Alexander. _The Nature of Order. An Essay on the Art of Building and the Nature of the Universe. Book One. The Phenomenon of Life_ [[The Center for Enviromental Structure]](https://www.patternlanguage.com/bookstore/bookshelf.html#0)
 1. Pieter Hintjens. _Culture & Empire: Digital Revolution_. [[iMatix Global Services]](#)
 
 ### Video Courses

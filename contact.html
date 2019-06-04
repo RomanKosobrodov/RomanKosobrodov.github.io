@@ -1,22 +1,42 @@
 ---
 layout: default
 title: Contact me
-extra_js: 
-  - https://www.google.com/recaptcha/api.js
 ---
 
 <h1>Contact me</h1>
 
 <div class="posts">
-  <form action="https://ykvgpew1wb.execute-api.ap-southeast-2.amazonaws.com/prod/mail" method="post">
-  <input type="hidden" name="redirect" value="{{ site.url }}/thanks">
-  <input type="hidden" name="toName" value="roman">
-  <label for="email">Email address</label>
-  <input class="form-control" type="email" name="email" size="40" required placeholder="Email"><br>
-  <label for="message">Message</label>
-  <textarea class="form-control" rows="7" cols="80" name="message" required></textarea>
-  
-  <div class="g-recaptcha" data-sitekey="6LeqPAkUAAAAALXUt5HBIcyI-4vpQ0g-jVIqsoZ1"></div>
-  <input class="btn btn-primary" type="submit" value="Submit">
-</form>
+  <form
+    action="https://roman-kosobrodov-github-send.herokuapp.com/index.php"
+    method="post"
+  >
+    <input type="hidden" name="redirect" value="{{ site.url }}/thanks" />
+    <label for="sender">Name</label><br />
+    <input
+      class="form-control"
+      type="text"
+      name="sender"
+      size="40"
+      required
+      placeholder="Your name"
+    /><br />
+    <label for="email">Email address</label>
+    <input
+      class="form-control"
+      type="email"
+      name="email"
+      size="40"
+      required
+      placeholder="Email"
+    /><br />
+    <label for="message">Message</label>
+    <textarea
+      class="form-control"
+      rows="7"
+      cols="80"
+      name="message"
+      required
+    ></textarea>
+    <input class="btn btn-primary" type="submit" name="submit" value="Submit" />
+  </form>
 </div>
